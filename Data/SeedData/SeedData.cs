@@ -26,7 +26,7 @@ namespace MvcMovie.Models
                         Title = "When Harry Met Sally",
                         ReleaseDate = DateTime.Parse("1989-2-12"),
                         Genre = "Romantic Comedy",
-                        Rating = "R",
+                        Rating = "5",
                         Price = 7.99M
                     },
 
@@ -35,8 +35,8 @@ namespace MvcMovie.Models
                         Title = "Ghostbusters ",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Comedy",
-                        Rating = "R",
-                        Price = 8.99M
+                        Rating = "4",
+                        Price = 8.29M
                     },
 
                     new Movie
@@ -44,7 +44,7 @@ namespace MvcMovie.Models
                         Title = "Ghostbusters 2",
                         ReleaseDate = DateTime.Parse("1986-2-23"),
                         Genre = "Comedy",
-                        Rating = "R",
+                        Rating = "3",
                         Price = 9.99M
                     },
 
@@ -53,8 +53,44 @@ namespace MvcMovie.Models
                         Title = "Rio Bravo",
                         ReleaseDate = DateTime.Parse("1959-4-15"),
                         Genre = "Western",
-                        Rating = "R",
-                        Price = 3.99M
+                        Rating = "2",
+                        Price = 8.99M
+                    },
+
+                    new Movie
+                    {
+                        Title = "Rio Bravo",
+                        ReleaseDate = DateTime.Parse("1959-4-15"),
+                        Genre = "Western",
+                        Rating = "2",
+                        Price = 3.77M
+                    },
+
+                    new Movie
+                    {
+                        Title = "Rio Bravo",
+                        ReleaseDate = DateTime.Parse("1959-4-15"),
+                        Genre = "Western",
+                        Rating = "2",
+                        Price = 3.11M
+                    },
+
+                    new Movie
+                    {
+                        Title = "Rio Bravo",
+                        ReleaseDate = DateTime.Parse("1959-4-15"),
+                        Genre = "Western",
+                        Rating = "1",
+                        Price = 2.99M
+                    }, 
+
+                    new Movie
+                    {
+                        Title = "Rio Bravo",
+                        ReleaseDate = DateTime.Parse("1959-4-15"),
+                        Genre = "Western",
+                        Rating = "5",
+                        Price = 7.99M
                     }
                 );
                 context.SaveChanges();
