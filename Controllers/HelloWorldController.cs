@@ -5,22 +5,21 @@ namespace MvcMovie.Controllers
 {
     public class HelloWorldController : Controller
     {
-        // 
-        // GET: /HelloWorld/
-
-        public string Index()
+        //호출되는 메서드 /HelloWorld index출력
+        public IActionResult Index()
         {
-            return "이 페이지는 헬로월드";
+            return View();
         }
 
-        // 
-        // GET: /HelloWorld/Welcome/ 
+        // GET: /HelloWorld/Welcome/ name과 num 출력
+        //helloworld/welcome?name=이름&numtimes=숫자
+        public IActionResult Welcome(string name="seo0", int numTimes = 1)
 
-        // GET: /HelloWorld/Welcome/ 
-        // Requires using System.Text.Encodings.Web;
-        public string Welcome(string name, int numTimes = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
     }
 }
